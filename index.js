@@ -58,6 +58,10 @@ app.get('/history', async (req, res) => {
 });
 
 
+app.get('/something', async (req, res) => {
+    res.status(500).send('random error');
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
