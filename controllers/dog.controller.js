@@ -17,7 +17,6 @@ class DogController {
             return url;
         }catch (error){
             console.log(error);
-            throw error;
         }
     }
 }
